@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.banner{
+    width: 100;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image:url(wallpaper\ 3.jpg);
+}
+.navbar{
+    width: 80;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 90px;
+    cursor: pointer;
+
+}
+.navbar ul li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(78, 69, 14);
+    text-transform: uppercase;
+
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: rgb(161, 88, 59);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.2s;
+
+
+}
+.navbar ul li:hover::after{
+    width: 100%;
+
+}
+ .content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.content h1{
+    font-family:bangla 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: fff;
+    font-size: 70px;
+    margin-top: 20px auto;
+}
+.content h3{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+    margin-top: 40PX auto;
+    color: rgb(5, 5, 29);
+}
+.button{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+.btn{
+    border: goldenrod;
+    padding: 10px 30px;
+    color:rgb(0, 0, 0);
+    text-decoration:none ;
+    transition: 00.2s ease;
+}
+    .btn:hover{
+        background-color: transparent;
+        color: goldenrod;
+    }
